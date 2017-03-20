@@ -44,7 +44,7 @@ class Crossref(object):
         Crossref(***REMOVED*** = "123456")
 
     '''
-    def __init__(self, base_url = "http://api.crossref.org", ***REMOVED*** = None):
+    def __init__(self, base_url = "https://api.crossref.org", ***REMOVED*** = None):
 
         self.base_url = base_url
         self.***REMOVED*** = ***REMOVED***
