@@ -181,7 +181,6 @@ class Crossref:
         mailto: str = None,
         ua_string: str = None,
     ) -> None:
-
         self.base_url = base_url
         self.***REMOVED*** = ***REMOVED***
         self.mailto = mailto
