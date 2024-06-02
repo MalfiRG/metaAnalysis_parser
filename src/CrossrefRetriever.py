@@ -3,6 +3,7 @@ from habanero import Crossref
 import time
 import re
 from typing import List, Dict, Any
+
 from Logger import Logger
 
 
@@ -157,7 +158,8 @@ class CrossrefRetriever:
         :param request_count: Current request count.
         :param items_count: Number of items retrieved in the current request.
         """
-        self.logger.info(f"Request {request_count}: Retrieved {items_count} records, total articles: {self.total_articles_retrieved}")
+        self.logger.info(
+            f"Request {request_count}: Retrieved {items_count} records, total articles: {self.total_articles_retrieved}")
 
     def _has_reached_limit(self) -> bool:
         """
@@ -171,11 +173,12 @@ class CrossrefRetriever:
 # Usage example
 if __name__ == "__main__":
     params = {
-        "mailto": ""***REMOVED***"",
+        "mailto": ""***REMOVED***"",  # adjust to your email
         "request_interval": 1,
         "max_requests": 5,
         "cursor_max": 100,
     }
+    # Adjust keywords as needed
     keywords = "climate+change+AND+CO2+emission+AND+global+warming+AND+planes"
 
     retriever = CrossrefRetriever(**params)
