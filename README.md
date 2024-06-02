@@ -29,7 +29,7 @@ This will create a new virtual environment in a folder named `.venv`. To activat
 
 On Windows:
 ```bash
-.venv\Scriptsctivate
+.venv\Scripts\activate
 ```
 
 On Unix or MacOS:
