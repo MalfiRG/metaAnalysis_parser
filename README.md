@@ -1,9 +1,9 @@
 
-# Project Title
+# Crossref articles scraper for meta analysis creation
 
 ## Description
 
-Provide a brief description of your project here.
+As the title says. Adapted from [Habanero Project](https://github.com/sckott/habanero).
 
 ## Getting Started
 
