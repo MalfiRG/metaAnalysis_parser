@@ -1,0 +1,12 @@
+{
+    "params": {
+        "mailto": "yourmailaddress@gmail.com",
+        "request_interval": 1,
+        "max_requests": 1000000,
+        "db_file": "Articles.db",
+        "max_articles": 1000000,
+        "cursor_max": 20,
+        "limit": 10
+    },
+    "keywords": "((COVID-19) OR (coronavirus infection) OR (SARS-CoV-2)) AND ((severe) OR (severity))"
+}
