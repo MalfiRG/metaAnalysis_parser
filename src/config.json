@@ -1,0 +1,12 @@
+{
+    "params": {
+        "mailto": ""***REMOVED***"",
+        "request_interval": 1,
+        "max_requests": 1000000,
+        "db_file": "test.db",
+        "max_articles": 1000000,
+        "cursor_max": 20,
+        "limit": 10
+    },
+    "keywords": "((vitamin D) OR (vitamin D3) OR (25-hydroxyvitamin D) OR (cholecalciferol) OR (25(OH)D)) AND ((supplement) OR (supplementation)) AND ((COVID-19) OR (coronavirus infection) OR (SARS-CoV-2)) AND ((severe) OR (severity))"
+}
