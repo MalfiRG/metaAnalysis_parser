@@ -18,8 +18,8 @@ class ContentFetcher:
 
 
 class KeywordClassifier:
-    def __init__(self, ***REMOVED***, keywords, model="llama-3-sonar-small-32k-online", base_url="https://api.perplexity.ai"):
-        self.***REMOVED*** = ***REMOVED***
+    def __init__(self, api_key, keywords, model="llama-3-sonar-small-32k-online", base_url="https://api.perplexity.ai"):
+        self.api_key = api_key
         self.keywords = keywords
         self.model = model
         self.base_url = base_url
@@ -46,7 +46,7 @@ class KeywordClassifier:
         headers = {
             "accept": "application/json",
             "content-type": "application/json",
-            "authorization": f"Bearer {self.***REMOVED***}"
+            "authorization": f"Bearer {self.api_key}"
         }
 
         response = requests.post(f"{self.base_url}/chat/completions", json=payload, headers=headers)
@@ -93,10 +93,10 @@ class ContentProcessor:
 if __name__ == "__main__":
     url = "https://sci-hub.se/10.21608/ejvs.2024.278774.1959"
     keywords = ["transcription", "keyword2", "keyword3"]
-    ***REMOVED*** = "***REMOVED***"
+    api_key = "your_api_key_here"
 
     fetcher = ContentFetcher(url)
-    classifier = KeywordClassifier(***REMOVED***, keywords)
+    classifier = KeywordClassifier(api_key, keywords)
     saver = ArticleSaver()
 
     processor = ContentProcessor(fetcher, classifier, saver)
